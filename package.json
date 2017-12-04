@@ -1,0 +1,23 @@
+{
+  "name": "ngrxtras",
+  "version": "0.0.0",
+  "description": "Helpers for writing less ngrx boilerplate.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nullpub/ngrxtras.git"
+  },
+  "keywords": [
+    "ngrx",
+    "rxjs"
+  ],
+  "author": "Brandon Blaylock (brandon@null.pub)",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/nullpub/ngrxtras/issues"
+  },
+  "homepage": "https://github.com/nullpub/ngrxtras#readme"
+}
