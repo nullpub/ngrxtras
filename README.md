@@ -69,16 +69,16 @@ const b = new TwoAction({blah: 'b'});
 Lastly, some reducer code:
 
 ```ts
-import { MyActions } from '$store';
+import { MyActions, MyTypes } from '$store';
 
 // Type Narrowing in reducers also works the same as before!
 function someReducer(action: MyActions) {
   switch (action.type) {
-    case actionTypes.ONE:
+    case MyTypes.ONE:
       return console.log('Got one action', action.payload.stuff);
-    case actionTypes.TWO:
+    case MyTypes.TWO:
       return console.log('Got one action', action.payload.blah);
-    case actionTypes.THREE:
+    case MyTypes.THREE:
       return console.log('Got three action', action.payload);
     default:
       console.log('Got default');
