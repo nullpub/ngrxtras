@@ -9,11 +9,11 @@ export class PayloadAction<T, P = void> {
   constructor(public readonly payload: P) {};
 }
 
-export class ErrorAction<T, E = any, P = void> {
+export class ErrorAction<T, E = Error, P = void> {
   readonly type: T;
   readonly isError = true;
   constructor(
-    public readonly payload: P,
-    public readonly error: E
+    public readonly error: E,
+    public readonly payload?: P
   ) {};
 }
