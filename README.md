@@ -18,24 +18,24 @@ export enum MyTypes {
   THREE = 'ACTION_THREE',
 }
 
-export class OneAction extends PayloadAction<actionTypes.ONE, SomeInterface> {};
-export class TwoAction extends PayloadAction<actionTypes.TWO, OtherInterface> {};
-export class ThreeAction extends PayloadAction<actionTypes.THREE> {}; // No payload on this action
+export class OneAction extends PayloadAction<MyTypes.ONE, SomeInterface> {};
+export class TwoAction extends PayloadAction<MyTypes.TWO, OtherInterface> {};
+export class ThreeAction extends PayloadAction<MyTypes.THREE> {}; // No payload on this action
 
 /**
  * These actions have the following forms:
  * class OneAction {
- *   public readonly type: actionTypes.ONE;
+ *   public readonly type: MyTypes.ONE;
  *   constructor(public readonly payload: SomeInterface) {}
  * }
  * 
  * class TwoAction {
- *   public readonly type: actionTypes.TWO;
+ *   public readonly type: MyTypes.TWO;
  *   constructor(public readonly payload: OtherInterface) {}
  * }
  * 
  * class ThreeAction {
- *   public readonly type: actionTypes.THREE;
+ *   public readonly type: MyTypes.THREE;
  *   constructor(public readonly payload: undefined) {}
  * }
  */

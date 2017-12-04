@@ -1,5 +1,5 @@
 {
-  "name": "ngrxtras",
+  "name": "@nll/ngrxtras",
   "version": "0.0.0",
   "description": "Helpers for writing less ngrx boilerplate.",
   "main": "index.ts",
