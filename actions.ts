@@ -1,19 +1,18 @@
-export class Action<T> {
-  public readonly type: T;
-  readonly isError = false;
-}
+import { Action, PayloadAction, ErrorAction } from './models';
 
-export class PayloadAction<T, P = void> {
-  public readonly type: T;
-  readonly isError = false;
-  constructor(public readonly payload: P) {};
-}
-
-export class ErrorAction<T, E = Error, P = void> {
+export class BaseAction<T> implements Action<T> {
   readonly type: T;
-  readonly isError = true;
+}
+
+export class BasePayloadAction<T, P> implements PayloadAction<T, P> {
+  readonly type: T;
+  constructor(readonly payload: P) {};
+}
+
+export class BaseErrorAction<T, E, P> implements ErrorAction<T, E, P> {
+  readonly type: T;
   constructor(
-    public readonly error: E,
-    public readonly payload?: P
+    readonly error: E,
+    readonly payload: P
   ) {};
 }
