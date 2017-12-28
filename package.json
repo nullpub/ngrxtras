@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/nullpub/ngrxtras/issues"
   },
-  "homepage": "https://github.com/nullpub/ngrxtras#readme"
+  "homepage": "https://github.com/nullpub/ngrxtras#readme",
+  "devDependencies": {
+    "rxjs": "^5.5.6"
+  },
+  "peerDependencies": {
+    "rxjs": "^5.5.6"
+  }
 }
